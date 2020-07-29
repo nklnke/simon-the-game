@@ -15,14 +15,14 @@
       <div class="status">
         <h2>Status</h2>
 
-        <h3>Round: {{}}</h3>
+        <h3>Round: {{ round }}</h3>
 
         <button>Start</button>
       </div>
 
       <div class="options">
         <h2>Options</h2>
-        <div class="game-difficulty" action="">
+        <div class="game-difficulty">
           <input type="radio" checked /> Easy <br />
           <input type="radio" /> Normal <br />
           <input type="radio" /> Hard
@@ -36,6 +36,11 @@
 export default {
   name: "App",
   components: {},
+  data() {
+    return {
+      round: 1,
+    };
+  },
 };
 </script>
 
